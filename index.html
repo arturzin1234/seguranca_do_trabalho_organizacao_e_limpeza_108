@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança do Trabalho & Organização</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0284c7;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-heading: #0f172a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 3px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .card h3 {
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .5s-card {
+            border-left-color: var(--accent);
+        }
+
+        .risk-card {
+            border-left-color: #ef4444;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Segurança do Trabalho & Organização</h1>
+        <p>A importância do ambiente organizado para a prevenção de acidentes e saúde ocupacional</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#importancia">Importância</a></li>
+            <li><a href="#metodologia-5s">Metodologia 5S</a></li>
+            <li><a href="#nrs">Normas (NRs)</a></li>
+            <li><a href="#riscos">Riscos</a></li>
+            <li><a href="#procedimentos">Procedimentos</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Importância -->
+        <section id="importancia">
+            <h2 class="section-title">Importância na Segurança do Trabalho</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Prevenção de acidentes</h3>
+                    <p>Ambientes organizados evitam tropeços, quedas, cortes e colisões com materiais empilhados incorretamente.</p>
+                </div>
+                <div class="card">
+                    <h3>Inspeção e manutenção</h3>
+                    <p>Locais limpos facilitam a identificação de vazamentos de óleos, desgaste de máquinas, trincas em estruturas ou cabos elétricos expostos.</p>
+                </div>
+                <div class="card">
+                    <h3>Saúde ocupacional</h3>
+                    <p>A eliminação de poeiras, resíduos químicos e mofo reduz doenças respiratórias e dermatológicas.</p>
+                </div>
+                <div class="card">
+                    <h3>Rotas de emergência</h3>
+                    <p>Mantém corredores, saídas de emergência, extintores e painéis elétricos desobstruídos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metodologia 5S -->
+        <section id="metodologia-5s">
+            <h2 class="section-title">A Metodologia 5S</h2>
+            <p style="margin-bottom: 1rem;">Criada no Japão, a filosofia dos 5S é a principal ferramenta aplicada para manter o ambiente de trabalho seguro e organizado:</p>
+            <div class="grid">
+                <div class="card 5s-card">
+                    <h3>Seiri (Utilização)</h3>
+                    <p>Separar o que é útil do que é inútil. Descarta-se ou destina-se corretamente ferramentas quebradas, papéis acumulados ou materiais em excesso.</p>
+                </div>
+                <div class="card 5s-card">
+                    <h3>Seiton (Organização)</h3>
+                    <p>Guardar cada coisa em seu devido lugar. Utiliza-se sinalização visual, etiquetas e demarcação de solo.</p>
+                </div>
+                <div class="card 5s-card">
+                    <h3>Seiso (Limpeza)</h3>
+                    <p>Limpar e inspecionar. A limpeza serve para checar a conservação do maquinário e das ferramentas.</p>
+                </div>
+                <div class="card 5s-card">
+                    <h3>Seiketsu (Padronização)</h3>
+                    <p>Criar rotinas, normas e padrões visuais de organização para que todos sigam as mesmas regras.</p>
+                </div>
+                <div class="card 5s-card">
+                    <h3>Shitsuke (Disciplina)</h3>
+                    <p>Transformar as práticas em hábito diário, mantendo o comprometimento de toda a equipe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NRs -->
+        <section id="nrs">
+            <h2 class="section-title">Normas Regulamentadoras (NRs) Relacionadas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>NR-01</h3>
+                    <p><strong>Gerenciamento de Riscos Ocupacionais:</strong> Exige a identificação de perigos onde a desorganização atua como fator agravante.</p>
+                </div>
+                <div class="card">
+                    <h3>NR-12</h3>
+                    <p><strong>Segurança em Máquinas:</strong> Exige que as áreas de circulação ao redor de máquinas sejam mantidas limpas e desobstruídas.</p>
+                </div>
+                <div class="card">
+                    <h3>NR-17</h3>
+                    <p><strong>Ergonomia:</strong> Aborda a organização do posto de trabalho para evitar posturas inadequadas e desgaste físico.</p>
+                </div>
+                <div class="card">
+                    <h3>NR-24</h3>
+                    <p><strong>Condições Sanitárias:</strong> Define os padrões de higiene para sanitários, vestiários e refeitórios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Riscos -->
+        <section id="riscos">
+            <h2 class="section-title">Riscos Causados pela Falta de Organização</h2>
+            <div class="grid">
+                <div class="card risk-card">
+                    <h3>Riscos Mecânicos / Acidentes</h3>
+                    <p>Ferramentas no chão, poças de óleo/graxa, objetos empilhados sem amarração e obstrução de saídas de emergência.</p>
+                </div>
+                <div class="card risk-card">
+                    <h3>Riscos Biológicos</h3>
+                    <p>Acúmulo de lixo atraindo vetores (ratos, insetos) e proliferação de fungos/bactérias em ambientes sem higienização.</p>
+                </div>
+                <div class="card risk-card">
+                    <h3>Riscos Químicos</h3>
+                    <p>Armazenamento incorreto e falta de rótulos em produtos químicos, além de poeiras que podem causar explosões.</p>
+                </div>
+                <div class="card risk-card">
+                    <h3>Riscos Ergonômicos</h3>
+                    <p>Objetos fora do alcance adequado, exigindo torções do corpo ou esforço físico desnecessário.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Procedimentos -->
+        <section id="procedimentos">
+            <h2 class="section-title">Procedimentos Operacionais Padrão (POP)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Gerenciamento de Resíduos</h3>
+                    <p>Coleta seletiva e descarte correto de resíduos perigosos (panos com óleo, rebarbas metálicas, químicos).</p>
+                </div>
+                <div class="card">
+                    <h3>Sinalização de Segurança</h3>
+                    <p>Demarcação de pisos para delimitar circulação, áreas de máquinas e locais de extintores.</p>
+                </div>
+                <div class="card">
+                    <h3>Inspeções Periódicas</h3>
+                    <p>Rotinas de verificação visual feitas pelo Técnico de Segurança do Trabalho ou pela CIPA.</p>
+                </div>
+                <div class="card">
+                    <h3>Manutenção de EPIs e EPCs</h3>
+                    <p>Higienização correta e guarda de equipamentos em locais adequados e arejados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios -->
+        <section id="beneficios">
+            <h2 class="section-title">Benefícios Diretos da Organização</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Ganhos de Produtividade</h3>
+                    <p>Menos tempo perdido procurando ferramentas ou materiais.</p>
+                </div>
+                <div class="card">
+                    <h3>Redução de Custos</h3>
+                    <p>Menos desperdício de matérias-primas danificadas por mau armazenamento.</p>
+                </div>
+                <div class="card">
+                    <h3>Clima Organizacional</h3>
+                    <p>Maior bem-estar, motivação e redução do estresse entre os trabalhadores.</p>
+                </div>
+                <div class="card">
+                    <h3>Vida Útil de Equipamentos</h3>
+                    <p>Máquinas limpas e bem mantidas sofrem menos desgaste e quebras imprevisíveis.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Portal de Segurança do Trabalho &copy; 2026 - Guia Prático de Higiene e Organização</p>
+    </footer>
+
+</body>
+</html>
+
+
